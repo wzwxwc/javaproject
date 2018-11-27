@@ -1,10 +1,10 @@
-package com.zc.springstudytest;
+package com.zc.iocstudytest;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.zc.springstudy.Hello;
+import com.zc.iocstudy.Hello;
 
 public class IocTest {
 

@@ -1,4 +1,4 @@
-package com.zc.springstudy;
+package com.zc.iocstudy;
 
 public class Hello {
 	public void say() {
