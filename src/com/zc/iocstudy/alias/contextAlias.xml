@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
 	<!-- bean definitions here -->
-	<bean id="helloAlias" class="com.zc.iocstudy.alias.HelloAlias"></bean>
+	<bean id="helloAlias" class="com.zc.iocstudy.alias.HelloAlias" scope="prototype"></bean>
 	<!-- alias标签的id属性值 和 bean标签的name属性值保持一致 -->
 	<alias name="helloAlias" alias="hello_alias" />
 </beans>
