@@ -8,5 +8,7 @@
 
     <!-- bean definitions here -->
     <!-- 把一个类放到spring容器中，则该类为bean -->
+    <!-- 类用com.zc...中间是用点；资源文件是用斜杠 -->
     <bean id="hello11" class="com.zc.springstudy.Hello"></bean>
+    <import resource="com/zc/iocstudyalias/contextAlias.xml"></import>
 </beans>

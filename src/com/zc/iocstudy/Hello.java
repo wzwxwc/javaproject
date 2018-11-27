@@ -2,7 +2,7 @@ package com.zc.iocstudy;
 
 public class Hello {
 	public void say() {
-		System.out.println("你好");
+		System.out.println("你好，我是Hello");
 	}
 	
 	

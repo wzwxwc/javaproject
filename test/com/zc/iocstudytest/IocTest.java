@@ -15,6 +15,11 @@ public class IocTest {
 		ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 		Hello hello = (Hello) context.getBean("hello11");
 		hello.say();
+		
+//		HelloAlias
+//		com.zc.iocstudyalias.HelloAlias
 
 	}
+	
+	
 }
