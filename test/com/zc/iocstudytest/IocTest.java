@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.zc.iocstudy.Hello;
+import com.zc.iocstudy.alias.HelloAlias;
 
 public class IocTest {
 
@@ -16,9 +17,9 @@ public class IocTest {
 		Hello hello = (Hello) context.getBean("hello11");
 		hello.say();
 		
-//		HelloAlias
-//		com.zc.iocstudyalias.HelloAlias
-
+		HelloAlias ha=(HelloAlias)context.getBean("hello_alias");
+		ha.say();
+		
 	}
 	
 	
