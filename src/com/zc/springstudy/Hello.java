@@ -1,7 +1,7 @@
 package com.zc.springstudy;
 
 public class Hello {
-	public static void say() {
+	public void say() {
 		System.out.println("你好");
 	}
 	
