@@ -24,8 +24,12 @@ public class IocTest {
 		HelloAlias ha2 = (HelloAlias) context.getBean("hello_alias");
 		System.out.println("实例ha打印结果为：" + ha);
 		System.out.println("实例ha2打印结果为" + ha2);
+
+		System.out.println("开始测试单例模式共享属性");
+		ha.getLstNames().add("aaa");
+		ha2.getLstNames().add("bbb");
+		System.out.println(ha.getLstNames().toString());
 		
 		
 	}
-
 }

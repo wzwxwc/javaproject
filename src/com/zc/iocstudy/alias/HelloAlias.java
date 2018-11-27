@@ -1,10 +1,11 @@
 package com.zc.iocstudy.alias;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HelloAlias {
 
-	List<String> lstNames;
+	List<String> lstNames=new ArrayList<String>();
 
 	public List<String> getLstNames() {
 		return lstNames;
