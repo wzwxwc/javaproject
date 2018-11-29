@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:jdbc="http://www.springframework.org/schema/jdbc" 
-    xsi:schemaLocation="
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd"> 
-        
-        <bean id="person" class="com.zc.distudy.Person">
-        	<property name="pid" value="1"></property>
-        	<property name="pname" value="王二麻子"></property>
-        	<property name="student" ref="studentBean"></property>
-        </bean>
-        <bean id="studentBean" class="com.zc.distudy.Student"></bean>
+        http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+	<bean id="person" class="com.zc.distudy.Person">
+		<property name="pid" value="1"></property>
+		<property name="pname" value="王二麻子"></property>
+		<property name="student" ref="studentBean"></property>
+	</bean>
+	<!-- 因为重载是根据参数的顺序以及类型来决定的，而不是根据名称来决定，所以 -->
+	<bean id="studentBean" class="com.zc.distudy.Student">
+		<!-- 
+			构造器的参数
+			index：参数的位置，从0开始计算；
+			type：参数的类型；
+			value:给基本属性赋值
+			ref：给引用类型赋值
+		 -->
+		<constructor-arg index="0" value="一年级"></constructor-arg>
+		<constructor-arg index="1" type="int" value="11" ></constructor-arg>
+	</bean>
 </beans>

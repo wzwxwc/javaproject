@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.zc.distudy.Person;
+import com.zc.distudy.Student;
 
 public class DiTest {
 
@@ -15,10 +16,10 @@ public class DiTest {
 		Person per = (Person) context.getBean("person");
 		System.out.println(per);
 		System.out.println(per.getPname());
-		per.getStudent().show();
 		
-		
+		Student st=(Student)context.getBean("studentBean");
+		System.out.println("grade is " + st.getGrade());
+		System.out.println("rank is " + st.getRank());
+
 	}
 }
-
-
