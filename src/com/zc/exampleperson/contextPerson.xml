@@ -7,9 +7,5 @@
         http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
 	<bean id="excelDoc" class="com.zc.exampledoc.ExcelDocument"></bean>
-	<bean id="pdfDoc" class="com.zc.exampledoc.PdfDocument"></bean>
-	<bean id="worddoc" class="com.zc.exampledoc.WordDocument"></bean>
-	<bean id="docManager" class="com.zc.exampledoc.DocumentManager">
-		<constructor-arg index="0" ref="excelDoc"></constructor-arg>
-	</bean>
+	
 </beans>
