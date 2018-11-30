@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author zcAsus
  *
  */
-public class DocTest {
+public class TestDoc {
 
 	@Test
 	public void test() {
