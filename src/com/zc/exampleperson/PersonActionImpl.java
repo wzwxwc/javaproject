@@ -1,6 +1,10 @@
 package com.zc.exampleperson;
 
 public class PersonActionImpl implements IPersonAction{
+	
+	public PersonActionImpl(IPersonService personService) {
+		this.personService=personService;
+	}
 
 	private IPersonService personService; 
 	@Override

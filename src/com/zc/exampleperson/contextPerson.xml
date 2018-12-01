@@ -6,10 +6,15 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
-	<bean id="beanPersonDaoImpl" class="com.zc.exampleperson.PersonDaoImpl"></bean>
-	<bean id="beanPersonSerImpl" class="com.zc.exampleperson.PersonServiceImpl">
+	<bean id="beanPersonDaoImpl"
+		class="com.zc.exampleperson.PersonDaoImpl"></bean>
+	<bean id="beanPersonSerImpl"
+		class="com.zc.exampleperson.PersonServiceImpl">
 		<property name="personDao" ref="beanPersonDaoImpl"></property>
 	</bean>
-	<bean id="beanPersonActImpl" class="com.zc.exampleperson.PersonActionImpl"></bean>
-	
+	<bean id="beanPersonActImpl"
+		class="com.zc.exampleperson.PersonActionImpl">
+		<constructor-arg index="0" ref="beanPersonSerImpl"></constructor-arg>
+	</bean>
+
 </beans>
