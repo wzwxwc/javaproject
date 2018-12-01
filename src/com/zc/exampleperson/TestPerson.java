@@ -6,9 +6,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestPerson {
 	
+	@SuppressWarnings("resource")
 	@Test
 	public void test() {
 		ApplicationContext context=new ClassPathXmlApplicationContext("com/zc/exampleperson/contextPerson.xml");
-		context.getBean("");
+		IPersonAction personAct=(IPersonAction) context.getBean("beanPersonActImpl");
+		personAct.savePerson();
 	}
 }

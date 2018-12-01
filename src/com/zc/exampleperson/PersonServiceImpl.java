@@ -5,6 +5,7 @@ public class PersonServiceImpl implements IPersonService {
 	private IPersonDao personDao;
 	@Override
 	public void savePerson() {
+		System.out.println("调用了PersonServiceImpl中的savePerson方法");
 		this.personDao.savePerson();
 	}
 
