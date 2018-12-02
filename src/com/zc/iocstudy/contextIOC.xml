@@ -12,5 +12,7 @@
     <!-- bean中的id值是唯一的，不能出现2个同名的id值 -->
     <!-- spring容器中，看到 -->
     <bean id="hello11" class="com.zc.iocstudy.Hello"></bean>
-    <import resource="com/zc/iocstudy/alias/contextAlias.xml"></import>
+    <!-- 下述使用绝对路径，找不到具体的xml文件，必须使用相对路径？ -->
+    <!-- <import resource="com/zc/iocstudy/alias/contextAlias.xml"></import> -->
+    <import resource="alias/contextAlias.xml"></import>
 </beans>

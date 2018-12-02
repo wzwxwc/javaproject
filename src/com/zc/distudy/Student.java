@@ -19,22 +19,22 @@ public class Student {
 		this.grade = grade;
 		this.rank = rank;
 	}
-
-	public String getGrade() {
-		return grade;
-	}
-
-	public void setGrade(String grade) {
-		this.grade = grade;
-	}
-
-	public String getRank() {
-		return rank;
-	}
-
-	public void setRank(String rank) {
-		this.rank = rank;
-	}
+//
+//	public String getGrade() {
+//		return grade;
+//	}
+//
+//	public void setGrade(String grade) {
+//		this.grade = grade;
+//	}
+//
+//	public String getRank() {
+//		return rank;
+//	}
+//
+//	public void setRank(String rank) {
+//		this.rank = rank;
+//	}
 
 	public void show() {
 		System.out.println("执行了student类中的show方法");
