@@ -1,7 +1,7 @@
 package com.zcaop.exampleSalary;
 
 /**
- * 切面
+ * 日志相关类
  * 
  * @author zcAsus
  *
