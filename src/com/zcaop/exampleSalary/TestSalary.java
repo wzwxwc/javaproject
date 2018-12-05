@@ -13,6 +13,7 @@ public class TestSalary {
 		Object smImpl = new SalaryManagerImpl();
 
 		SalaryInterceptor inte = new SalaryInterceptor(log, sec, pri, smImpl);
+		// 下述要创建一个代理对象
 		ISalaryManager sm = (ISalaryManager) Proxy.newProxyInstance(smImpl.getClass().getClassLoader(),
 				smImpl.getClass().getInterfaces(), inte);
 		sm.showSalary();
