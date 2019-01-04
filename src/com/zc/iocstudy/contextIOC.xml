@@ -13,6 +13,7 @@
     <!-- spring容器中，看到 -->
     <bean id="hello11" class="com.zc.iocstudy.Hello"></bean>
     <!-- 下述使用绝对路径，找不到具体的xml文件，必须使用相对路径？ -->
+    <!-- 下述路径根本ctrl点不过去，是不是路径不正确？ -->
     <!-- <import resource="com/zc/iocstudy/alias/contextAlias.xml"></import> -->
     <import resource="alias/contextAlias.xml"></import>
 </beans>

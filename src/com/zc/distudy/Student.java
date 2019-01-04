@@ -39,4 +39,10 @@ public class Student {
 	public void show() {
 		System.out.println("执行了student类中的show方法");
 	}
+
+	@Override
+	public String toString() {
+		return "Student [grade=" + grade + ", rank=" + rank + "]";
+	}
+	
 }

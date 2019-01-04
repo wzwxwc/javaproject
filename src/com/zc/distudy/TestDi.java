@@ -17,6 +17,11 @@ public class TestDi {
 		Student st=(Student)context.getBean("studentBean");
 //		System.out.println("grade is " + st.getGrade());
 //		System.out.println("rank is " + st.getRank());
+		System.out.println(st.toString());
 		st.show();
+		
+		//奇怪，下述为什么不能进行智能提示呢？
+		Student st2=new Student(1,"aa");
+		st2.show();
 	}
 }
