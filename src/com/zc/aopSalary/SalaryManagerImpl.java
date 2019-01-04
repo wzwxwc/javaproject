@@ -1,4 +1,4 @@
-package com.zcaop.exampleSalary;
+package com.zc.aopSalary;
 
 public class SalaryManagerImpl implements ISalaryManager{
 

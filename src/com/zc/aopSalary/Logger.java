@@ -1,4 +1,4 @@
-package com.zcaop.exampleSalary;
+package com.zc.aopSalary;
 
 /**
  * 日志相关类

@@ -1,4 +1,4 @@
-package com.zcaop.exampleSalary;
+package com.zc.aopSalary;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
