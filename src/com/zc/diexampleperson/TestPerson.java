@@ -1,4 +1,4 @@
-package com.zc.exampleperson;
+package com.zc.diexampleperson;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;

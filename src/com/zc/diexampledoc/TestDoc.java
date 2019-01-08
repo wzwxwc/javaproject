@@ -1,4 +1,4 @@
-package com.zc.exampledoc;
+package com.zc.diexampledoc;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;

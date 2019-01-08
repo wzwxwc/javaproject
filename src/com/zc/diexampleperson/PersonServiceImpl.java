@@ -1,4 +1,4 @@
-package com.zc.exampleperson;
+package com.zc.diexampleperson;
 
 public class PersonServiceImpl implements IPersonService {
 
