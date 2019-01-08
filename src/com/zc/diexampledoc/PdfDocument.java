@@ -1,4 +1,4 @@
-package com.zc.exampledoc;
+package com.zc.diexampledoc;
 
 public class PdfDocument implements IDocument {
 
