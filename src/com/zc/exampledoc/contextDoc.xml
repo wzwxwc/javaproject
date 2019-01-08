@@ -9,7 +9,11 @@
 	<bean id="excelDoc" class="com.zc.exampledoc.ExcelDocument"></bean>
 	<bean id="pdfDoc" class="com.zc.exampledoc.PdfDocument"></bean>
 	<bean id="worddoc" class="com.zc.exampledoc.WordDocument"></bean>
-	<bean id="docManager" class="com.zc.exampledoc.DocumentManager">
+	<!-- 下述有2种方式来进行DI操作 -->
+	<!-- <bean id="docManager" class="com.zc.exampledoc.DocumentManager">
 		<constructor-arg index="0" ref="excelDoc"></constructor-arg>
+	</bean> -->
+	<bean id="docManager" class="com.zc.exampledoc.DocumentManager">
+		<property name="doc" ref="pdfDoc"></property>
 	</bean>
 </beans>

@@ -10,8 +10,12 @@ public class DocumentManager {
 	public DocumentManager(IDocument doc) {
 		this.doc = doc;
 	}
+	
+	public IDocument getDoc() {
+		return doc;
+	}
 
-	public void setDocument(IDocument doc) {
+	public void setDoc(IDocument doc) {
 		this.doc = doc;
 	}
 

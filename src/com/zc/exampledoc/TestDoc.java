@@ -16,7 +16,7 @@ public class TestDoc {
 	public void test() {
 		DocumentManager docManager = new DocumentManager();
 		IDocument doc = new WordDocument();
-		docManager.setDocument(doc);
+		docManager.setDoc(doc);
 		docManager.read();
 		docManager.write();
 	}
