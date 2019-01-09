@@ -9,7 +9,7 @@ public class TestPerson {
 	@SuppressWarnings("resource")
 	@Test
 	public void test() {
-		ApplicationContext context=new ClassPathXmlApplicationContext("com/zc/exampleperson/contextPerson.xml");
+		ApplicationContext context=new ClassPathXmlApplicationContext("com/zc/diexampleperson/contextPerson.xml");
 		IPersonAction personAct=(IPersonAction) context.getBean("beanPersonActImpl");
 		personAct.savePerson();
 	}

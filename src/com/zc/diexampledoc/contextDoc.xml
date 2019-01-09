@@ -6,14 +6,14 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
-	<bean id="excelDoc" class="com.zc.exampledoc.ExcelDocument"></bean>
-	<bean id="pdfDoc" class="com.zc.exampledoc.PdfDocument"></bean>
-	<bean id="worddoc" class="com.zc.exampledoc.WordDocument"></bean>
+	<bean id="excelDoc" class="com.zc.diexampledoc.ExcelDocument"></bean>
+	<bean id="pdfDoc" class="com.zc.diexampledoc.PdfDocument"></bean>
+	<bean id="worddoc" class="com.zc.diexampledoc.WordDocument"></bean>
 	<!-- 下述有2种方式来进行DI操作 -->
-	<!-- <bean id="docManager" class="com.zc.exampledoc.DocumentManager">
+	<!-- <bean id="docManager" class="com.zc.diexampledoc.DocumentManager">
 		<constructor-arg index="0" ref="excelDoc"></constructor-arg>
 	</bean> -->
-	<bean id="docManager" class="com.zc.exampledoc.DocumentManager">
+	<bean id="docManager" class="com.zc.diexampledoc.DocumentManager">
 		<property name="doc" ref="pdfDoc"></property>
 	</bean>
 </beans>

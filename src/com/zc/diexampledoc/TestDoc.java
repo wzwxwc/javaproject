@@ -33,7 +33,7 @@ public class TestDoc {
 	@Test
 	public void testSpring() {
 		// 下述xml的地址应该是斜杠还是点？？
-		ApplicationContext context = new ClassPathXmlApplicationContext("com/zc/exampledoc/contextDoc.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/zc/diexampledoc/contextDoc.xml");
 		IDocument doc = (IDocument) context.getBean("excelDoc");
 		doc.read();
 		doc.write();
@@ -42,7 +42,7 @@ public class TestDoc {
 	@SuppressWarnings("resource")
 	@Test
 	public void testSpring2() {
-		ApplicationContext context=new ClassPathXmlApplicationContext("com/zc/exampledoc/contextDoc.xml");
+		ApplicationContext context=new ClassPathXmlApplicationContext("com/zc/diexampledoc/contextDoc.xml");
 		DocumentManager docManager=(DocumentManager) context.getBean("docManager");
 		docManager.write();
 		docManager.read();

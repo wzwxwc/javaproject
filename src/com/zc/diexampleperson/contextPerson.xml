@@ -9,13 +9,13 @@
         http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
 	<bean id="beanPersonDaoImpl"
-		class="com.zc.exampleperson.PersonDaoImpl"></bean>
+		class="com.zc.diexampleperson.PersonDaoImpl"></bean>
 	<bean id="beanPersonSerImpl"
-		class="com.zc.exampleperson.PersonServiceImpl">
+		class="com.zc.diexampleperson.PersonServiceImpl">
 		<property name="personDao" ref="beanPersonDaoImpl"></property>
 	</bean>
 	<bean id="beanPersonActImpl"
-		class="com.zc.exampleperson.PersonActionImpl">
+		class="com.zc.diexampleperson.PersonActionImpl">
 		<constructor-arg index="0" ref="beanPersonSerImpl"></constructor-arg>
 	</bean>
 
